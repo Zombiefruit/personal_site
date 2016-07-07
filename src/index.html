@@ -18,63 +18,79 @@
     -->
 
     <!-- This is the main stylesheet for my own stylings -->
-    <link href="resources/css/main_stylesheet.css" rel="stylesheet" >
+    <link href="resources/css/main_stylesheet.css" rel="stylesheet">
 
   </head>
 
   <body>
-    <div id="navbar">
+
+    <div id="wrapper">
       <nav>
         <ul>
-          <!-- TODO: find out how to do this in proper order -->
-          <li><a href="#contact">contact</a></li>
-          <li><a href="#resume">resume</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a class="active" href="#about">about</a></li>
+          <!-- TODO: find out how to do this in proper order, right now it has to be reversed -->
+          <li>
+            <a href="#contact">contact</a>
+          </li>
+          <li>
+            <a href="#resume">resume</a>
+          </li>
+          <li>
+            <a href="#projects">projects</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
         </ul>
       </nav>
 
+      </div>
+
+
+      <!-- A short section to introduce myself -->
+      <div id="about">
+        <header>
+          <div class="about-text">
+            <h1 class="bring-down">Hi, I'm Kieran</h1>
+            <p class="about-me">
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            </p>
+          </div>
+          <img src="resources/images/profile.jpg" alt="Profile picture" class="bring-down"/>
+        </header>
+      </div>
+
+      <!-- A section about my projects -->
+      <div id="projects">
+        <h2 class="project-head">Projects</h2>
+        <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+        </p>
+      </div>
+
+
+      <!-- A section containing my resume -->
+      <div id="resume">
+        <form>
+          <button>Resume</button>
+        </form>
+      </div>
+
+
+      <!-- A section with utilities to contact me -->
+      <div id="contact"></div>
+
+      <footer>
+        <p>
+          Copyright Kieran Williams, 2016.
+        </p>
+      </footer>
+
     </div>
 
-    <div id="about">
-      <h1 class="bring-down">Hi, I'm Kieran</h1>
-      <p class="about-me">
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-      </p>
-      <img src="resources/images/profile.jpg" alt="Profile picture" />
-
-    </div>
-
-    <div id="projects">
-      <h2>Projects</h2>
-      <p>
-        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-      </p>
-    </div>
-
-    <div id="resume">
-      <form>
-        <button>Resume</button>
-      </form>
-    </div>
-
-    <div id="contact">
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     -->
+
     <!-- JQuery version 2.2.3, little more updated that 1.11.3
     <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
     -->
@@ -86,5 +102,6 @@
 
     <!-- This is the main entry point for the javascript stuff - I try to make it easy :) -->
     <script src="resources/js/main.js"></script>
+
   </body>
 </html>
